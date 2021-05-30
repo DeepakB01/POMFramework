@@ -27,7 +27,7 @@ public class ProductInfoTest extends BaseTest{
 	@Test(dataProvider = "searchData")
 	public void productCountTest(String productName) {
 		searchResultPage = accPage.doSearch(productName);
-	  Assert.assertTrue(searchResultPage.getProductResultsCount() > 3);
+	  Assert.assertTrue(searchResultPage.getProductResultsCount() > 1);
 	}
 	
 	@Test(priority=2)
